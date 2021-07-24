@@ -1,0 +1,27 @@
+{
+  "name": "isolated-vm-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --mode none; node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "isolated-vm": "^4.3.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "react": "^17.0.2",
+    "redux": "^4.1.0",
+    "stream-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
