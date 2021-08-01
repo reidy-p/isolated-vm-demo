@@ -13,3 +13,9 @@ An important limitation of ``isolated-vm`` is that by default it only allows us 
 Alternatives
 ---
 * [Deno?](https://deno.land/)
+
+TODO
+---
+* Find code to cause memory leaks?
+* Any code to break isolate?
+* Spectre / Meltdown
