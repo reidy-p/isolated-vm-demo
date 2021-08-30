@@ -1,4 +1,4 @@
-Sandboxing JavaScript
+Sandboxing JavaScript (Work In Progress)
 ---
 Some applications or services allow us to submit JavaScript code to be executed on their servers. For example, [Screeps](https://screeps.com/) is an MMO game that users play by writing and submitting JavaScript code. [Cloudflare Workers](https://workers.cloudflare.com/) is a serverless platform that allows developers to run code closer to their users by running it on Cloudflare servers. These services need a way of isolating code submitted by users to prevent it from performing malicious actions on their servers or from trying to interfere with other user's processes. NodeJS was not designed to handle this use-case by default because it allows access to the filesystem and network, for example.
 
@@ -13,9 +13,11 @@ An important limitation of ``isolated-vm`` is that by default it only allows us 
 Alternatives
 ---
 * [Deno?](https://deno.land/)
+* Write the JS runtime in Rust to solve potential latency issues with using Node. Fly.io moved in this direction after hitting limits with ``isolated-vm``
 
 TODO
 ---
 * Find code to cause memory leaks?
 * Any code to break isolate?
 * Spectre / Meltdown
+
