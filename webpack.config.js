@@ -1,12 +1,12 @@
 module.exports = {
-  entry: "http",
+  entry: "moment",
   output: {
-    library: "http",
+    library: "moment",
   },
   target: "node",
-  resolve: {
-    fallback: {
-      http: require.resolve('stream-http')
-    }
-  }
+  // resolve: {
+  //   fallback: {
+  //     http: require.resolve('stream-http')
+  //   }
+  // }
 };
